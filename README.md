@@ -2,7 +2,7 @@
 
 > **Language**: JavaScript, HTML, CSS
 
-> **Description**: A simple webpage where you can type something and select the voice, they will be transferred to the speech.
+> **Description**: A simple webpage using the voice option from SpeechSynthesisUtterance() where you can type something and select the voice, they will be transferred to the speech.
 
 > **Project preview**:
 
