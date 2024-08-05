@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #BD968E;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+}
+
+h1 {
+    color: white;
+}
+
+#myTextArea {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    resize: none;
+    border-radius: 5px;
+}
+
+.controlGroup {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#voiceOption {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #41424E;
+    color: white;
+    cursor: pointer;
+    /* เปลี่ยน style ของ dropdown เช่นตัวลูกศรลง */
+    appearance: none; /* เอา style default เดิมของ html ออก*/
+    background-image: url(./down.png); /* เอารูปภาพมาทำเป็นลูกศรของ dropdown */
+    background-repeat: no-repeat;
+    background-size: 30px; /* กำหนดขนาดของลูกศร */
+    background-position-x: calc(100% - 10px); /* กำหนดตำแหน่งของลูกศรในแกนนอน ถ้า 100% จะชิดขวา เราเลยให้มัน cal ให้ */
+    background-position-y: 50%; /* กำหนดตำแหน่งของลูกศรในแกนตั้ง 0% คือชิดบน 100% คือชิดล่าง */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FECA30;
+    color: #41424E;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled { /* สำหรับ disabled ปุ่ม */
+    background-color: #CCC;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
